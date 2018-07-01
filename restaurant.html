@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurant App Review">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Catarina Veiga">
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />  
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand|Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+  <title>Restaurant Info</title>
+  <link rel="icon" href="img/icon.png">
+</head>
+
+<body class="inside">
+
+  <header>    
+    <nav><!--NAVABAR SECTION-->
+      <a href="./" tabindex="-1"><img src="img/logotipo.png" alt="logo restaurant app review" class="logo_header"></a>
+    </nav>
+
+    <ul id="breadcrumb" role="navigation" aria-label="breadcrumb"><!--BREADCRUMB SECTION-->
+      <li><a href="/">Home</a></li>
+    </ul>
+  </header>
+
+  <main id="maincontent">
+    <section id="restaurant-container"><!--RESTAURANT SECTION-->
+      <h1 id="restaurant-name" aria-label="restaurant's name"></h1>
+      <img id="restaurant-img">
+      <p id="restaurant-cuisine" aria-label="restaurant's cuisine"></p>
+      <p id="restaurant-address" aria-label="restaurant's address"></p>
+      <table id="restaurant-hours" aria-label="restaunt's open hours"></table>
+    </section>
+
+    <section id="map-container"><!--MAP SECTION-->
+      <div id="map" role="application" aria-label="location, map"></div>
+    </section>
+
+    <section id="reviews-container"><!--REVIEW SECTION-->
+      <ul id="reviews-list" aria-label="restaurant's reviews"></ul>
+    </section>
+    
+  </main>
+
+  <footer id="footer"><!--FOOTER SECTION-->
+    Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+  <script type="text/javascript" src="js/dbhelper.js"></script>
+  <script type="text/javascript" src="js/restaurant_info.js"></script>
+
+</body>
+
+</html>
