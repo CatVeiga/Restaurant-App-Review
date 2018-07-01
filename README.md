@@ -67,8 +67,8 @@ Take a look at the video:
 
 ## Authors
 
-<a href="https://github.com/cveiga819">Catarina Veiga</a>
+* <a href="https://github.com/cveiga819">Catarina Veiga</a>
 
-### 
+
 
 
